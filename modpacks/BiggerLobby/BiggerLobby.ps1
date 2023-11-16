@@ -12,10 +12,10 @@ while ($true) {
     Write-Host "3 - Quit"
     $modver = Read-Host "Enter your selection"
     if ($modver -eq 1) {
-        iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/install-mod.ps1'))
+        iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LC-Modpack-Installer/main/modpacks/BiggerLobby/install-mod.ps1'))
     }
     elseif ($modver -eq 2) {
-        iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/install-modBETA.ps1'))
+        iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LC-Modpack-Installer/main/modpacks/BiggerLobby/install-modBETA.ps1'))
     }
     elseif ($modver -eq 3) {
         exit

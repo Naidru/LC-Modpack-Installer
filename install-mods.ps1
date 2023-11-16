@@ -121,7 +121,7 @@ function Install {
 
     # Download and install biggerlobby
     Write-Host "Downloading and installing BiggerLobby"
-    $biggerLobbyVersion = Get-Arg "-biggerlobby" "1.0.9"
+    $biggerLobbyVersion = Get-Arg "-biggerlobby" "2.0.2"
     $biggerLobbyUrl = "https://thunderstore.io/package/download/bizzlemip/BiggerLobby/$biggerLobbyVersion/"
     $biggerLobbyStream = Request-Stream $biggerLobbyUrl
     Expand-Stream $biggerLobbyStream $lethalCompanyPath

@@ -10,7 +10,6 @@ Write-Host ""
 Write-Host "Created by Naidru"
 Pause
 Clear-Host
-:menu
 Write-Host "Please select a modpack"
 Write-Host ""
 Write-Host "1 - BiggerLobby Mod"

@@ -1,3 +1,4 @@
+Clear-Host
 $title = "Lethal Company Modded - BiggerLobby"
 Write-Host "BiggerLobby"
 Write-Host "-----------"

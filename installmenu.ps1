@@ -20,7 +20,7 @@ while ($true) {
     if ($selection -eq 1) {
         iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LC-Modpack-Installer/main/modpacks/BiggerLobby/BiggerLobby.ps1'))
     }
-    elseif (%selection -eq 2) {
+    elseif ($selection -eq 2) {
         iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LC-Modpack-Installer/main/modpacks/More%20Company/More%20Company.ps1'))
     }
     elseif ($selection -eq 3) {

@@ -16,6 +16,6 @@ echo.
 echo 1 - BiggerLobby Mod
 echo 2 - Quit
 set /p select=
-if %select% == 1 goto biggerlobby
+if %select% == 1 goto powershell -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/BiggerLobby.bat'))"
 if %select% == 2 exit
 echo An invalid option was selected!

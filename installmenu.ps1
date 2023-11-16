@@ -17,7 +17,7 @@ Write-Host "1 - BiggerLobby Mod"
 Write-Host "2 - Quit"
 $selection = Read-Host "Enter your selection"
 if ($selection -eq 1) {
-    iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/BiggerLobby.bat'))
+    iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/BiggerLobby.ps1'))
 }
 elseif ($selection -eq 2) {
     exit

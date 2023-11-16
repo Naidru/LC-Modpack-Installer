@@ -109,7 +109,7 @@ function Install ($arguments) {
 
     # Download and install lcapi
     Write-Host "Downloading and installing MoreCompany"
-    $moreCompanyVersion = Get-Arg $arguments "-morecompany"
+    $moreCompanyVersion = "1.0.1"
     $moreCompanyUrl = "https://thunderstore.io/package/download/notnotnotswipez/MoreCompany/$moreCompanyVersion/"
     $moreCompanyStream = Request-Stream $moreCompanyUrl
     Expand-Stream $moreCompanyStream $lethalCompanyPath

@@ -121,8 +121,8 @@ function Install {
 
     # Download and install biggerlobby
     Write-Host "Downloading and installing BiggerLobby - BETA 11 BUILD"
-    $biggerLobbyVersion = Get-Arg "-biggerlobby" "2.0.0-B11"
-    $biggerLobbyUrl = "https://cdn.discordapp.com/attachments/891317485738033152/1174690175964680232/BiggerLobbyv2.0.0beta11.zip"
+    $biggerLobbyVersion = Get-Arg "-biggerlobby" "2.0.0beta11"
+    $biggerLobbyUrl = "https://github.com/Naidru/LC-Modpack-Installer/raw/main/modpacks/BiggerLobby/BetaRelease/BiggerLobbyv$biggerLobbyVersion.zip"
     $biggerLobbyStream = Request-Stream $biggerLobbyUrl
     Expand-Stream $biggerLobbyStream $lethalCompanyPath
     Write-Host "Installed BiggerLobby $biggerLobbyVersion"

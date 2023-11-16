@@ -14,12 +14,16 @@ while ($true) {
     Write-Host "Please select a modpack"
     Write-Host ""
     Write-Host "1 - BiggerLobby Mod"
-    Write-Host "2 - Quit"
+    Write-Host "2 - More Company Mod"
+    Write-Host "3 - Quit"
     $selection = Read-Host "Enter your selection"
     if ($selection -eq 1) {
         iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LC-Modpack-Installer/main/modpacks/BiggerLobby/BiggerLobby.ps1'))
     }
-    elseif ($selection -eq 2) {
+    elseif (%selection -eq 2) {
+        iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LC-Modpack-Installer/main/modpacks/More%20Company/More%20Company.ps1'))
+    }
+    elseif ($selection -eq 3) {
         exit
     }
     else {

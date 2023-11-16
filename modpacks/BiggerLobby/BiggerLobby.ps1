@@ -22,6 +22,5 @@ while ($true) {
     }
     else {
         Write-Host "Invalid Option!"
-        goto biggerlobby
     }
 }

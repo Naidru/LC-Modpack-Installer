@@ -10,18 +10,19 @@ Write-Host ""
 Write-Host "Created by Naidru"
 Pause
 Clear-Host
-Write-Host "Please select a modpack"
-Write-Host ""
-Write-Host "1 - BiggerLobby Mod"
-Write-Host "2 - Quit"
-$selection = Read-Host "Enter your selection"
-if ($selection -eq 1) {
-    iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/BiggerLobby.ps1'))
-}
-elseif ($selection -eq 2) {
-    exit
-}
-else {
-    Write-Host "An invalid option was selected!"
-    goto menu
+while ($true) {
+    Write-Host "Please select a modpack"
+    Write-Host ""
+    Write-Host "1 - BiggerLobby Mod"
+    Write-Host "2 - Quit"
+    $selection = Read-Host "Enter your selection"
+    if ($selection -eq 1) {
+        iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/BiggerLobby.ps1'))
+    }
+    elseif ($selection -eq 2) {
+        exit
+    }
+    else {
+        Write-Host "An invalid option was selected!"
+    }
 }

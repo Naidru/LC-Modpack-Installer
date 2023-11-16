@@ -9,8 +9,8 @@ echo.
 echo.
 echo Created by Naidru
 pause
-:menu
 cls
+:menu
 echo Please select a modpack
 echo.
 echo 1 - BiggerLobby Mod
@@ -19,3 +19,4 @@ set /p select=
 if %select% == 1 goto powershell -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Naidru/LethalCompanyInstaller/main/modpacks/BiggerLobby/BiggerLobby.bat'))"
 if %select% == 2 exit
 echo An invalid option was selected!
+goto menu

@@ -1,3 +1,4 @@
+title Lethal Company - Modded Installation Kit - Created by Naidru
 echo What is this program?
 echo =====================
 echo This is a batch file that contains a compilation of certain modpacks that are easy to install with 1 press of a button.

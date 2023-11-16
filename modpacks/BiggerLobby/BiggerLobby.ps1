@@ -22,5 +22,6 @@ while ($true) {
     }
     else {
         Write-Host "Invalid Option!"
+        Write-Host ""
     }
 }

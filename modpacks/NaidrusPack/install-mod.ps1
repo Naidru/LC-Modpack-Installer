@@ -153,4 +153,4 @@ try {
     Write-Host "Install failed: $_"
 }
 
-Read-Host Ã¢â‚¬Å“Press ENTER to exit...Ã¢â‚¬Â
+Read-Host "Press ENTER to exit..."

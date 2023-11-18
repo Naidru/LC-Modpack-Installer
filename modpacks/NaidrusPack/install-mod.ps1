@@ -140,7 +140,7 @@ function Install {
     # Download and install FlaslightToggle
     Write-Host "Downloading and installing FlashlightToggle"
     $flashlightToggleVersion = Get-Arg "-flashlightToggle" "1.1.0"
-    $flashlightToggleUrl = "https://thunderstore.io/package/download/Renegades/FlashlightToggle/$motdVersion/"
+    $flashlightToggleUrl = "https://thunderstore.io/package/download/Renegades/FlashlightToggle/$flashlightToggleVersion/"
     $flashlightToggleStream = Request-Stream $flashlightToggleUrl
     Expand-Stream $flashlightToggleStream $lethalCompanyPath
     Write-Host "Installed FlashlightToggle $flashlightToggleVersion"

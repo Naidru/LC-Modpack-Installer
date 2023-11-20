@@ -146,6 +146,15 @@ function Install {
     Write-Host "Installed FlashlightToggle $flashlightToggleVersion"
     Write-Host ""
 
+    # Download and install WalkieUse
+    Write-Host "Downloading and installing WalkieUse"
+    $walkieUseVersion = Get-Arg "-walkieUse" "1.1.0"
+    $walkieUseToggleUrl = "https://thunderstore.io/package/download/Renegades/WalkieUse/$walkieUseVersion/"
+    $walkieUseStream = Request-Stream $walkieUseUrl
+    Expand-Stream $walkieUseStream $lethalCompanyPath
+    Write-Host "Installed WalkieUse $walkieUseVersion"
+    Write-Host ""
+
     # Download and install LethalCreature
     Write-Host "Downloading and installing LethalCreature"
     $lethalCreatureVersion = Get-Arg "-lethalCreature" "1.0.0"

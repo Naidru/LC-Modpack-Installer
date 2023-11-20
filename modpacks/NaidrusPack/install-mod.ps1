@@ -121,7 +121,7 @@ function Install {
 
     # Download and install biggerlobby
     Write-Host "Downloading and installing BiggerLobby"
-    $biggerLobbyVersion = Get-Arg "-biggerlobby" "2.1.1"
+    $biggerLobbyVersion = Get-Arg "-biggerlobby" "2.2.1"
     $biggerLobbyUrl = "https://thunderstore.io/package/download/bizzlemip/BiggerLobby/$biggerLobbyVersion/"
     $biggerLobbyStream = Request-Stream $biggerLobbyUrl
     Expand-Stream $biggerLobbyStream $lethalCompanyPath
@@ -144,6 +144,15 @@ function Install {
     $flashlightToggleStream = Request-Stream $flashlightToggleUrl
     Expand-Stream $flashlightToggleStream $lethalCompanyPath
     Write-Host "Installed FlashlightToggle $flashlightToggleVersion"
+    Write-Host ""
+
+    # Download and install LethalCreature
+    Write-Host "Downloading and installing LethalCreature"
+    $lethalCreatureVersion = Get-Arg "-lethalCreature" "1.0.0"
+    $lethalCreatureUrl = "https://thunderstore.io/package/download/DarnHyena/LethalCreature/$lethalCreatureVersion/"
+    $lethalCreatureStream = Request-Stream $lethalCreatureUrl
+    Expand-Stream $lethalCreatureStream $lethalCompanyPath
+    Write-Host "Installed LethalCreature $lethalCreatureVersion"
     Write-Host ""
 }
 

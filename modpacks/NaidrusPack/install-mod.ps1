@@ -112,7 +112,7 @@ function Install {
 
     # Download and install lcapi
     Write-Host "Downloading and installing LC_API"
-    $lcapiVersion = Get-Arg "-lcapi" "1.1.1"
+    $lcapiVersion = Get-Arg "-lcapi" "1.2.1"
     $lcapiUrl = "https://thunderstore.io/package/download/2018/LC_API/$lcapiVersion/"
     $lcapiStream = Request-Stream $lcapiUrl
     Expand-Stream $lcapiStream $lethalCompanyPath
